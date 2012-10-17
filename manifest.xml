@@ -1,0 +1,23 @@
+<package>
+  <description brief="RobotFace - Display your talking head on your robot.">
+
+     This is an application to display a talking head on your robot for human robot interaction. It displays text and synchronized mouthmovements. It is also able to show emotions.
+
+  </description>
+  <author>AGAS, Julian Giesen, David Gossow</author>
+  <license>LGPLv3</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/robot_face</url>
+  <logo>http://www.uni-koblenz-landau.de/koblenz/fb4/institute/icv/agpaulus/logo_institut.jpg</logo>
+
+  <depend package="roslib"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+  <rosdep name="pulse"/>
+  <rosdep name="festival"/>
+  <rosdep name="mbrola"/>
+  <rosdep name="qt4"/>
+</package>
+
+

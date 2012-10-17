@@ -1,0 +1,5 @@
+<launch>
+<!-- Start RobotFace node -->
+  <node name="RobotFace" pkg="blabberface" type="RobotFace" cwd="node" output="screen" />
+  <node name="FestivalSynthesizer" pkg="blabberface" type="FestivalSynthesizer" cwd="node" output="screen" />
+</launch>
