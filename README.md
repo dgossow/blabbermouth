@@ -4,11 +4,19 @@ blabberface
 Adds a chatty, doodly face to your robot.
 
 Requirements on Ubuntu: 
-- ROS
+- ROS Fuerte (http://www.ros.org)
 - libpulse-dev
 - festival-dev
 - festvox-us1
 - libqt4-dev
+
+How-To
+------
+
+Build
+
+`cd blabberface`
+`make`
 
 Launch the face app:
 
@@ -16,4 +24,4 @@ Launch the face app:
 
 Let it speak:
 
-`rostopic pub /robot_face/text_out std_msgs/String "Hello world!"`
+`rostopic pub -1 /robot_face/text_out std_msgs/String 'Hello world!'`

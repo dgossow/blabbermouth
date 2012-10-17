@@ -1,7 +1,5 @@
 <package>
-  <description brief="RobotFace - Display your talking head on your robot.">
-
-     This is an application to display a talking head on your robot for human robot interaction. It displays text and synchronized mouthmovements. It is also able to show emotions.
+  <description brief="blabberbot - a talking face for your robot.">
 
   </description>
   <author>AGAS, Julian Giesen, David Gossow</author>
