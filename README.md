@@ -1,7 +1,7 @@
 blabberface
 ===========
 
-Adds a chatty, doodly face to your robot.
+Adds a simple animated, talking head to your robot.
 
 Requirements on Ubuntu: 
 - ROS Fuerte (http://www.ros.org)
