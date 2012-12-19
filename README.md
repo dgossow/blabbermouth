@@ -1,5 +1,5 @@
-blabberface
-===========
+blabbermouth
+============
 
 Adds a simple animated, talking head to your robot. Forked from http://agas-ros-pkg.googlecode.com/svn/trunk/robot_face/.
 
