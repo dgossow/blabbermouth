@@ -25,7 +25,7 @@
 #include "Config.h"
 #include "MainWindow.h"
 
-MainWindow::MainWindow( QWidget* parent ) : QWidget( parent, Qt::FramelessWindowHint ), talking_head_( 0 )
+MainWindow::MainWindow( std::string config_file, QWidget* parent ) : QWidget( parent, Qt::FramelessWindowHint ), talking_head_( 0 )
 {
     setContentsMargins ( 0, 0, 0, 0 );
 
@@ -67,7 +67,7 @@ MainWindow::MainWindow( QWidget* parent ) : QWidget( parent, Qt::FramelessWindow
     try
     {
         std::vector< std::vector<float> > material_colors;
-        const char* cfgFilename =  "../config.cfg";
+        const char* cfgFilename = config_file.c_str();
 
         Config cfg(cfgFilename);
         width = cfg.get("Window Width");

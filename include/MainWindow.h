@@ -23,8 +23,8 @@
 #define TALKING_HEAD_INCLUDE_MAINWINDOW_H_
 
 #include <QWidget>
-
 #include <ros/ros.h>
+#include <string>
 
 #include "TalkingHead.h"
 #include "TextOutDisplay.h"
@@ -43,7 +43,7 @@ class MainWindow : public QWidget
 public:
 
     /** Constructor */
-    explicit MainWindow( QWidget* parent = 0 );
+    explicit MainWindow( std::string config_file, QWidget* parent = 0 );
 
     /** Destructor */
     virtual ~MainWindow();

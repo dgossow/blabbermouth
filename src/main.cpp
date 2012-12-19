@@ -32,8 +32,16 @@ int main( int argc, char *argv[] )
     QApplication app( argc, argv );
 
     app.setApplicationName( QString( "RobotFace" ) );
+    
+    //if (nh.getParam("~/config", config_file);
 
-    MainWindow window;
+    std::string config_file;
+    if (config_file == "")
+    {
+    	config_file = "../config.cfg";
+    }
+
+    MainWindow window(config_file, 0);
 
     QIcon icon;
     icon.addFile(QString::fromUtf8("../logo.png"), QSize(), QIcon::Normal, QIcon::Off);
