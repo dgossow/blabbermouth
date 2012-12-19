@@ -16,6 +16,7 @@ How-To
 Build
 
 `cd blabberface`
+
 `make`
 
 Launch the face app:
