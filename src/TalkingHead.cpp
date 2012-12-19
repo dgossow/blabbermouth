@@ -83,7 +83,6 @@ TalkingHead::TalkingHead( QWidget* parent, std::string mesh_string, std::vector<
     smileys_.push_back( "." );
     smileys_.push_back( ":&" );
 
-
     mesh_string_ = mesh_string;
     material_vector_ = material_vector;
 }
@@ -521,54 +520,54 @@ void TalkingHead::initAnimationStates()
 
 void TalkingHead::initPhoneMap()
 {
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "aa", "narrow" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ae", "wide" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ah", "wide" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ao", "narrow" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "aw", "narrow" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ax", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "axr", "open" ));
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ay", "wide" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "b", "close" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ch", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "d", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "dh", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "dx", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "eh", "wide" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "el", "wide" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "em", "wide" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "en", "wide" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "er", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ey", "wide" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "f", "close" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "g", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "hh", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "hv", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ih", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "iy", "wide" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "jh", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "k", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "l", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "m", "close" ));
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "n", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "nx", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ng", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "ow", "narrow" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "oy", "narrow" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "p", "close" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "r", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "s", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "sh", "open" ));
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "t", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "th", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "uh", "narrow" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "uw", "narrow" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "v", "close" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "w", "close" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "y", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "z", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "zh", "open" ) );
-    phonemes_.insert( std::pair<Ogre::String, Ogre::String>( "pau", "pau" ) );
+    phonemes_["aa"] = "narrow";
+    phonemes_["ae"] = "wide";
+    phonemes_["ah"] = "wide";
+    phonemes_["ao"] = "narrow";
+    phonemes_["aw"] = "narrow";
+    phonemes_["ax"] = "open";
+    phonemes_["axr"] = "open";
+    phonemes_["ay"] = "wide";
+    phonemes_["b"] = "close";
+    phonemes_["ch"] = "open";
+    phonemes_["d"] = "open";
+    phonemes_["dh"] = "open";
+    phonemes_["dx"] = "open";
+    phonemes_["eh"] = "wide";
+    phonemes_["el"] = "wide";
+    phonemes_["em"] = "wide";
+    phonemes_["en"] = "wide";
+    phonemes_["er"] = "open";
+    phonemes_["ey"] = "wide";
+    phonemes_["f"] = "close";
+    phonemes_["g"] = "open";
+    phonemes_["hh"] = "open";
+    phonemes_["hv"] = "open";
+    phonemes_["ih"] = "open";
+    phonemes_["iy"] = "wide";
+    phonemes_["jh"] = "open";
+    phonemes_["k"] = "open";
+    phonemes_["l"] = "open";
+    phonemes_["m"] = "close";
+    phonemes_["n"] = "open";
+    phonemes_["nx"] = "open";
+    phonemes_["ng"] = "open";
+    phonemes_["ow"] = "narrow";
+    phonemes_["oy"] = "narrow";
+    phonemes_["p"] = "close";
+    phonemes_["r"] = "open";
+    phonemes_["s"] = "open";
+    phonemes_["sh"] = "open";
+    phonemes_["t"] = "open";
+    phonemes_["th"] = "open";
+    phonemes_["uh"] = "narrow";
+    phonemes_["uw"] = "narrow";
+    phonemes_["v"] = "close";
+    phonemes_["w"] = "close";
+    phonemes_["y"] = "open";
+    phonemes_["z"] = "open";
+    phonemes_["zh"] = "open";
+    phonemes_["pau"] = "pau";
 }
 //---------------------------------------------------------------------------
 
