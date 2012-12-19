@@ -23,7 +23,7 @@ Build
 
 Launch the face app:
 
-`roslaunch blabberface blabberface.launch`
+`roslaunch blabbermouth blabbermouth.launch`
 
 Let it speak:
 
