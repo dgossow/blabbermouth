@@ -3,6 +3,8 @@ blabberface
 
 Adds a simple animated, talking head to your robot. Forked from http://agas-ros-pkg.googlecode.com/svn/trunk/robot_face/.
 
+![ScreenShot](https://raw.github.com/dgossow/blabbermouth/master/doc/screenshot.png)
+
 Requirements on Ubuntu: 
 - ROS Fuerte (http://www.ros.org)
 - libpulse-dev
