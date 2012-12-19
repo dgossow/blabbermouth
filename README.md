@@ -1,7 +1,7 @@
 blabberface
 ===========
 
-Adds a chatty, doodly face to your robot.
+Adds a simple animated, talking head to your robot. Forked from http://agas-ros-pkg.googlecode.com/svn/trunk/robot_face/.
 
 Requirements on Ubuntu: 
 - ROS Fuerte (http://www.ros.org)
@@ -16,6 +16,7 @@ How-To
 Build
 
 `cd blabberface`
+
 `make`
 
 Launch the face app:
